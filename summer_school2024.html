@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <nav>
+        <a href="#algebraic number theory">代数数论</a>
+        <a href="#algebraic geometry">代数几何</a>
+        <a href="#representation theory">表示论</a>
+      </nav>
+<body> 
+  <main>  
+    <hr>  <!--加一条横线-->
+    <section>
+      <a href="http://antss.amss.ac.cn/client/index">暑期学校官方链接</a>
+    </section>  
+    <hr>
+    本次代数与数论会议一共开设三门课程：代数数论，代数几何和表示论。
+    <section id="algebaric number theory">        
+        关于代数数论：代数数论主要参照的是<a href="http://faculty.bicmr.pku.edu.cn/~dingyiwen/">丁一文</a>的note1(可以打开他的主页下载),从algebraic integers 开始讲，我大概弄懂了Factorization theorem of Dedekind domain, class group number and number,local fields, p-adic number以及discrete valuation ring的结构和例子,class field theory基本没有学,最后一周时间讲了点class field theory, 不过只是列了一些结论。系统的class field theory可以在研究生的时候学习。
+        另外，国外的老师大部分都会写lecture notes,有些比书籍还容易理解。这里我推荐我导师给我的两个网站：
+        <ol>
+            <li><a href="https://www-users.cse.umn.edu/~garrett/">Paul Garrett's Page </a>,他写了很多lecture notes,很多课程都有涉及。</li>
+            <li><a href="https://kconrad.math.uconn.edu/blurbs/">K.Conrad</a>,这里面数论的多一些。</li>
+        </ol>
+        一些关于数论的参考书籍：
+        <ol>
+            <li>李超,周悦《代数与数论》. 这本书写的非常详细，很多证明都没有跳步，非常适合基础不太扎实的初学者。</li>
+            <li>冯克勤：《代数数论》. </li>
+            <li>Jurgen Neukrich: Algebaric Number Theory. 这本书我只看了一点，暂时不做评价.</li>
+            <li>J.P.Serre: A course in arithmetic,GTM7. 这本书可以作为p-adic number的一个入门知识读本.</li>
+        </ol>
+        
+    </section>
+    <section id="algebaric geometry">
+        关于代数几何：代数几何可以关注<a href="https://people.mpim-bonn.mpg.de/scholze/papers.html">Peter Scholze</a>的主页，他的Homepage上有很多代数几何的notes,有些东西比GTM52更容易理解。代数几何与代数数论中需要用到交换代数的大量事实，如果不引入更多的工具，环论与模论的很多习题都是“为做而做”的，缺乏动机与实际意义，学了之后很容易忘记。可以在学了一部分交换代数之后就去学习代数几何与代数数论，等需要更多的交换代数之后再回过头来补充。(另外，我觉得如果以后不是要专门研究代数几何的话，可以只学variety就可以了。)我个人不是做代数几何的，因此可能理解会有所偏差，酌情参考。
+        一些交换代数与代数几何的参考书籍：
+        <ol>
+            <li>Michael Atiyah: An Introduction to Commutative Algebaric. 重要的东西都放在习题里面了。</li>
+            <li>Kirwan: Compelx Algebaric Curves. 这本书为提供了很多代数曲线的例子，可以在读GTM52之前先阅读一下这本书，对代数曲线有更多的了解。另外，听说学代数几何之前最好有一些Riemann surfaces 的例子。</li>
+            <li>Robin Harstone: Algebaric Geometry, GTM52. 重要的东西也都放在习题里面了。</li>           
+        </ol>
+    </section>
+
+    <section id="representation theory">
+      关于表示论：表示论的内容非常多，也非常杂。我主要分为两个方面来介绍：
+      有限群表示论参考书：
+      <ol>
+        <li>丘维声：群表示论. 非常适合初学者的参考资料，前1-5章写的还不错，证明也很详细。但是用的方法几乎都是高等代数的内容，这对于进一步的学习是不利的,这本书推荐看1-5章.</li>
+        <li>J.P.Serre: Linear Representatios of Finite Groups, GTM42. Serre的书都写的非常地简略，对于初学者不是很友好，不过这本书在chapter 18里面讲了Modular representation（在特征为p的域上的表示）,这在其他书上是很难找到的.</li>
+        <li>W.Folton: Representation heory: A first course, GTM129. 这本书写的很好，基本上涵盖了各种表示论的内容.</li>
+        <li>薛航的讲义：<a href="http://www.math.ac.cn/xshd/hyyzt/201902/W020191210557979361932.pdf">http://www.math.ac.cn/xshd/hyyzt/201902/W020191210557979361932.pdf. </a> 该讲义写的很简略，如果只看该讲义的话，基本上学不到任何东西,但是这本书上有设计到一些标准的表示论的教材上没有的东西，比如GLn(Fq)的表示.</li>
+        另外，有限群表示论还有一份特别好的讲义：
+        <li><a href="https://math.mit.edu/~etingof/replect.pdf#:~:text=left%20ideal%20of%20an%20algebra%20A%20is%20a%20subspace">Introduction to representation theory</a></li>
+      </ol>
+    </section>
+    群的表示是这个群在某个线性空间上的作用,从而我们可以利用线性空间来研究群的结构。根据Maschke定理：如果域K的特征不整除群G的阶，则每一个有限维表示都是decomposable的(即分解为不可约表示的直和)，从而irreducible与indecomposable是等价的，(一般情况下,对无限群，irreducible与decomposable是不等价的，举个例子：<a href="https://math.stackexchange.com/questions/3096105/irreducible-vs-indecomposable-representation">例子</a>).因此有限群的表示我们只需要研究不可约表示即可。但是在研究表示的过程中，直接对一个表示进行直和分解是不太容易的，而特征标给了我们一个计算的方法。此外，对于低阶有限群来说，特征标表(character table)基本上给出了群的各种信息，在学习对称群和交错群的表示的时候，一定要动手自己算几个对称群(S4,S5,A4,A5)的特征标表；但是对于阶数较大的群，计算特征标表相比就会困哪很多，或者说，研究阶数较大的群，利用特征标表不是一个很好的方法。关于表示论的学习，一定要多算例子，一些特别抽象的证明可以不用理会，知道个结论，会用就行。等哪天真的要用到证明了在回过头来看。（例子>>定理>>证明）
+    紧群表示论参考书：
+    <ol>
+      <li>A.Deitmar,S.Echterhoff: Principles of Harmonic Analysis. 这是中科院暑期学校讲紧群表示论的参考教材，是一本非常好的入门书.</li>
+      <li>Representations of Compact Lie Groups, GTM98. 这是我做毕业论文时主要参考的一本书，里面有紧李群的基本的表示，基本上涵盖了紧李群表示的基本内容.</li>
+      <li>Symmetry,Representations and Invariants, GTM255. 这是表示论的标准参考教材，偏代数.我导师在表示论方面遇到问题也是查看这本书.</li>
+      <li>Mark R.Sepanski: Compact Lie Groups. 这本书分析的味道浓一些.</li>
+    </ol>
+      上面我们简单介绍了有限群的表示，但是对于无限群表示，首先得在群上定义拓扑。拓扑群就是具有群结构并且群运算都是连续的拓扑空间，一个很重要的例子就是李群。紧群就是说首先是一个拓扑群，然后作为拓扑空间又是紧空间，紧是一个很好的性质，紧群的表示的结果大多数都是与有限群表示论的结果都是一样的。研究拓扑群的表示需要用到大量泛函分析和调和分析的知识。
+
+      另外，如果是专门做p-adic群的表示的，可以参考以下书籍：
+      <ul>
+        <li>Colin J.Bushnell Guy henniart: The Local Langlands Conjecture for GL(2). 这本书几乎包含了GL(2,Zp)的所有表示的技巧以及处理方法.</li>
+      </ul>
+
+
+    <a href="index.html">返回主页.</a>
+  </main>
+
+</html>
